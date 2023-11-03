@@ -1,0 +1,21 @@
+// Defina as cores
+$cor-de-fundo: #000; // Preto
+$cor-de-destaque: #FF5733; // Laranja suave
+
+// Estilize o corpo da página
+body {
+  background-color: $cor-de-fundo;
+  margin: 0; // Margens zero para a página inteira
+  font-family: Arial, sans-serif; // Escolha uma fonte elegante
+}
+
+// Defina estilos globais para links
+a {
+  color: $cor-de-destaque;
+  text-decoration: none;
+  transition: color 0.3s; // Efeito de transição suave na cor do link
+}
+
+a:hover {
+  color: #FF0000; // Altere a cor quando o link for destacado
+}
