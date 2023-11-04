@@ -1,0 +1,57 @@
+/* Defina as cores */
+$cor-de-fundo: #000; // Preto
+$cor-de-destaque: #FF5733; // Laranja suave
+
+/* Estilo global do cabeçalho */
+.header {
+  background-color: $cor-de-fundo;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Garante que o cabeçalho cubra a largura total da tela */
+  position: fixed; /* Fixa o cabeçalho na parte superior */
+  top: 0; /* Alinha o cabeçalho ao topo */
+  z-index: 1000; /* Garante que o cabeçalho esteja acima do conteúdo */
+  transition: background-color 0.3s; /* Efeito de transição de cor de fundo */
+}
+
+/* Estilize o logo */
+.logo a {
+  text-decoration: none;
+  color: $cor-de-destaque;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px; /* Adiciona margem à esquerda do logo */
+}
+
+/* Estilize o menu de navegação */
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-right: 20px; /* Adiciona margem à direita do menu para alinhá-lo corretamente */
+}
+
+.menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: $cor-de-destaque;
+  transition: color 0.3s; /* Efeito de transição suave na cor do link */
+}
+
+.menu a:hover {
+  color: #FF0000; /* Altere a cor quando o link for destacado */
+}
+
+/* Estilize o link de login/registrar */
+.login a {
+  text-decoration: none;
+  color: $cor-de-destaque;
+  transition: color 0.3s; /* Efeito de transição suave na cor do link */
+  margin-right: 20px; /* Adiciona margem à direita do link de login/registrar */
+}
